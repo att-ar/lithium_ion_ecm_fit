@@ -214,8 +214,16 @@ if __name__ == "__main__":
     while order not in ["1","2"]:
         order = input("Order of RC-Model (1 or 2): " )
     order = int(order)
+    to_csv = "0"
+    while to_csv[0].lower() not in ["t","f"]:
+        to_csv = input("Output to csv file [t] or [f]: ")
+        
 
     file = input("Path of file to analyze: ")
-
-    df = ecm_param(file, order = order)
-    print(df)
+    
+    if to_csv[0].lower() == "t":
+        to_csv = True
+    else: to_csv = False
+        
+    df = ecm_param(file, order = order, to_csv = to_csv)
+    print("\n", df)
