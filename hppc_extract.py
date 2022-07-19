@@ -77,9 +77,8 @@ def f_2volt(data, r_int, r_1, c_1, r_2, c_2):
 def ecm_param(data, order = 2, to_csv = False):
     '''
     .txt file[, bool] -> pandas.DataFrame, plotly line plot
-    Precondition: .txt file of an HPPC test from the Maccor
 
-    This function takes a .txt file from an HPPC test ran by the Maccor
+    This function takes a .txt file from an HPPC test
     and parameterizes the equivalent circuit model (ECM) of the cell.
 
     It first splits all the HPPC test data at 10 SOCs (100 - 10),
