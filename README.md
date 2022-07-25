@@ -4,7 +4,7 @@ This repository is based on the Battery-HPPC-model-fitting repo by [Manh Kien Tr
 The data used to develop both these repositories was the same and can be found in his [repo](https://github.com/kmtran95/Battery-HPPC-model-fitting/blob/main/HPPC_LFP.zip.). His model is in MatLab, mine is in Python.
 
 The HPPC test is characterized using the [second order RC model](#ecm) of the ecm.<br>
-`scipy.curvefit()` parameterizes the ecm function and the resulting modeled and experimental voltage are plotted by the end of the parameterization
+`scipy.curvefit()` parameterizes the ecm function and the resulting modeled and experimental voltage are plotted using Plotly by the end of the parameterization
 
 ## ECM <a id = "ecm"></a>
 
