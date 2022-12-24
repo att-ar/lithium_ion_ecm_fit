@@ -6,6 +6,8 @@ The data used to develop both these repositories was the same and can be found i
 The HPPC test is characterized using the [second order RC model](#ecm) of the ecm.<br>
 `scipy.curvefit()` parameterizes the ecm function and the resulting modeled and experimental voltage are plotted using Plotly by the end of the parameterization
 
+*EDIT Dec 2023:* Adding a feed forward neural network and a custom loss function script that will parameterize the 2nd order ECM using machine learning
+
 ## ECM <a id = "ecm"></a>
 
 $$ U_{1,k+1} = exp(-\Delta t/\tau_1)\cdot U_{1,k} + R_1[1 - exp(-\Delta t/\tau_1)]\cdot I_k $$
